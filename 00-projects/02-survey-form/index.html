@@ -1,0 +1,246 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 02 - Survey Form</title>
+</head>
+<body>
+
+     <div>
+         <header>
+             <h1 id="title">Lorem Ipsum Dolor</h1>
+             <p id="description">Lorem Ipsum Dolor Lorem Ipsum Dolor Lorem Ipsum Dolor Lorem Ipsum Dolor </p>
+         </header>
+         <main>
+             <form id="survey-form" action="">
+                <div class="form-group">
+                    <label id="name-label" for="name">Name:</label>
+                    <input 
+                        type="text"
+                        name="name"
+                        id="name"
+                        placeholder="Enter your name..."
+                        required
+                    >
+                    
+                    <label id="email-label" for="email">E-mail:</label>
+                    <input 
+                        type="email"
+                        name="email"
+                        id="email"
+                        placeholder="Enter your e-mail..."
+                        required
+                    >
+
+                    <label id="number-label" for="number">Phone Number</label>
+                    <input 
+                        type="number"
+                        name="number"
+                        id="number"
+                        placeholder="Enter your phone number..."
+                        required
+                    >
+                </div>
+                <div class="form-group">
+                    <p>Which option best describes your current role?</p>
+                    <select name="role" id="dropdown" class="form-control" required>
+                        <option disabled selected value>Choose one option:</option>
+                        <option value="learner">Beginner</option>
+                        <option value="amateur">Amateur</option>
+                        <option value="professional">Professional</option>
+                        <option value="justforfun">Enjoyer</option>
+                        <option value="other">Other...</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <p>Would you recommend freeCodeCamp to a friend?</p>
+                    <label>
+                        <input
+                            name="user-recommend" 
+                            type="radio"
+                            value="yes"
+                            class="input-radio"
+                        >Yes
+                    </label>
+
+                    <label>
+                        <input 
+                            name="user-recommend"
+                            type="radio"
+                            value="maybe"
+                            class="input-radio"
+                        >Maybe
+                    </label>
+
+                    <label>
+                        <input 
+                            name="user-recommend"
+                            type="radio"
+                            value="maybe"
+                            class="input-radio"
+                        >No    
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <p></p>
+                </div>
+             </form>
+         </main>
+     </div>
+     
+     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 02 - Survey Form</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center">Find Your Band</h1>
+            <p id="description">Encontre músicos para formar uma banda.</p>
+        </header>
+
+        <form>
+            <div class="form-group">
+                <label for="name">Name:
+                    <input 
+                        name="name"
+                        type="text"
+                        id="name"
+                        class="form-control"
+                        placeholder="Name"
+                        required
+                    >
+                </label>
+
+                <label for="age">Age:
+                    <input 
+                        name="age"
+                        type="text"
+                        id="age"
+                        class="form-control"
+                        placeholder="Age"
+                        required
+                    >
+                </label>
+
+                <label for="email">E-mail:
+                    <input
+                        name="email"
+                        type="text"
+                        id="email"
+                        class="form-control"
+                        placeholder="E-mail"
+                        required
+                    >
+                </label>
+
+                <label for="contact">Please, leave your contact:
+                    <span>(Optional)</span>
+                    <input
+                        name="contact"
+                        type="text"
+                        id="contact"
+                        class="form-control"
+                        placeholder="Contact"
+                    >
+                </label>
+            </div>
+
+            <div class="form-group">
+                <p>Which options below it is the most compatible with your music experience?</p>
+                <select 
+                    name="experience" 
+                    id="exp-dropdown" 
+                    class="form-control"
+                >
+                    <option value="beginner">Beginner</option>
+                    <option value="amateur">Amateur</option>
+                    <option value="professional">Professional</option>
+                    <option value="4fun">Just for fun =)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>Choose the instruments which you are more proficient:</p>
+                <label>
+                    <input
+                        name="instruments"
+                        value="guitar"
+                        type="checkbox"
+                        class="input-checkbox"
+                    >Guitar
+                </label>
+                <label>
+                    <input
+                        name="instruments"
+                        value="bass"
+                        type="checkbox"
+                        class="input-checkbox"
+                    >Bass
+                </label>
+                <label>
+                    <input
+                        name="instruments"
+                        value="drums"
+                        type="checkbox"
+                        class="input-checkbox"
+                    >Drums
+                </label>
+                <label>
+                    <input
+                        name="instruments"
+                        value="acoustic-guitar"
+                        type="checkbox"
+                        class="input-checkbox"
+                    >Acoustic Guitar
+                </label>
+                <label>
+                    <input
+                        name="instruments"
+                        value="keyboard"
+                        type="checkbox"
+                        class="input-checkbox"
+                    >Keyboard
+                </label>
+                <label>
+                    <input
+                        name="instruments"
+                        value="piano"
+                        type="checkbox"
+                        class="input-checkbox"
+                    >Piano
+                </label>
+                <label>
+                    <input
+                        name="instruments"
+                        value="vocal"
+                        type="checkbox"
+                        class="input-checkbox"
+                    >Vocals
+                </label>
+                <label>Other:
+                    <input
+                        name="instruments"
+                        value=""
+                        type="text"
+                        class="input-checkbox"
+                    >
+                </label>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>

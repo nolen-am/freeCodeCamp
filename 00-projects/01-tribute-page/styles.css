@@ -1,0 +1,90 @@
+html {
+    /* Setting a base font size of 10px give us easier rem calculations
+       Info: 1rem === 10px, 1.5rem === 15px, 2rem === 20px and so forth
+     */
+    font-size: 10px;
+  }
+  
+body {
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+    'Helvetica Neue', Arial, sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-align: center;
+    color: rgb(14, 36, 61);
+    margin: 0;
+}
+
+h1 {
+    font-size: 5rem;
+    margin-bottom: 0px;
+}
+
+@media (max-width: 650px) {
+h1 {
+    font-size: 4rem;
+    line-height: 1.6;
+}
+}
+
+a {
+    color: #236e2d;
+}
+
+a:visited {
+    color: #71976d;
+}
+
+#main {
+    margin: 30px 15px;
+    padding: 10px;
+    border-radius: 5px;
+    background: #eee;
+}
+
+@media (max-width: 650px) {
+    #main {
+        margin: 10px 10px;
+    }
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin: 0 auto;
+}
+
+#img-caption {
+    margin: 15px 0 5px 0;
+}
+
+@media (max-width: 650px) {
+    #img-caption {
+        font-size: 1.4rem;
+    }
+}
+
+#img-div {
+    background: rgba(255, 255, 255, 0.459);
+    padding: 10px;
+    margin: 0 60px 0;
+    border-radius: 5px;
+}
+
+@media (max-width: 650px) {
+    #img-div {
+        margin: 0;
+    }
+}
+
+ul {
+    max-width: 500px;
+    margin: 0 auto 50px auto;
+    text-align: left;
+    line-height: 1.8;
+}
+
+li {
+    margin: 16px 0;
+}

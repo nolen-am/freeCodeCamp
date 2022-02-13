@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Project 02 - Survey Form</title>
 </head>
 <body>
     <div class="container">
         <header class="header">
             <h1 id="title" class="text-center">Encontre Sua Banda!</h1>
-            <p id="description">Encontre músicos para formar uma banda.</p>
+            <p id="description" class="text-center">Encontre músicos para formar uma banda.</p>
         </header>
 
         <form>
@@ -21,7 +22,7 @@
                         type="text"
                         id="name"
                         class="form-control"
-                        placeholder="Nome"
+                        placeholder="Digite seu nome..."
                         required
                     >
                 </label>
@@ -29,10 +30,10 @@
                 <label for="age">Idade:
                     <input 
                         name="age"
-                        type="text"
+                        type="number"
                         id="age"
                         class="form-control"
-                        placeholder="Idade"
+                        placeholder="Digite sua idade..."
                         required
                     >
                 </label>
@@ -40,22 +41,21 @@
                 <label for="email">E-mail:
                     <input
                         name="email"
-                        type="text"
+                        type="email"
                         id="email"
                         class="form-control"
-                        placeholder="E-mail"
+                        placeholder="Digite seu e-mail..."
                         required
                     >
                 </label>
 
                 <label for="contact">Por favor, deixe seu contato:
-                    <span>(Opcional)</span>
                     <input
                         name="contact"
-                        type="text"
+                        type="tel"
                         id="contact"
                         class="form-control"
-                        placeholder="Contato"
+                        placeholder="Deixe seu contato..."
                     >
                 </label>
             </div>
@@ -164,7 +164,165 @@
             </div>
             <div class="form-group">
                 <p>Selecione os estilos que você mais gostaria de tocar:</p>
-                <label for=""></label>
+                <label>
+                    <input
+                        name="fav-styles"
+                        value="rock"
+                        type="checkbox"
+                        class="input-checkbox"
+                    >Rock
+                </label>
+                <label>
+                    <input
+                        name="fav-styles"
+                        value="sertanejo"
+                        type="checkbox"
+                        class="input-checkbox"
+                    >Sertanejo
+                </label>
+                <label>
+                    <input
+                        name="fav-styles"
+                        value="Pop"
+                        type="checkbox"
+                        class="input-checkbox"
+                    >Pop
+                </label>
+                <label>
+                    <input
+                        name="fav-styles"
+                        value="samba"
+                        type="checkbox"
+                        class="input-checkbox"
+                    >Samba
+                </label>
+                <label>
+                    <input
+                        name="fav-styles"
+                        value="pagode"
+                        type="checkbox"
+                        class="input-checkbox"
+                    >Pagode
+                </label>
+                <label>
+                    <input
+                        name="fav-styles"
+                        value="jazz"
+                        type="checkbox"
+                        class="input-checkbox"
+                    >Jazz
+                </label>
+                <label>
+                    <input
+                        name="fav-styles"
+                        value="blues"
+                        type="checkbox"
+                        class="input-checkbox"
+                    >Blues
+                </label>
+                <label>
+                    <input
+                        name="fav-styles"
+                        value="mpb"
+                        type="checkbox"
+                        class="input-checkbox"
+                    >MPB
+                </label>
+                <label>
+                    <input
+                        name="fav-styles"
+                        value="bossa-nova"
+                        type="checkbox"
+                        class="input-checkbox"
+                    >Bossa Nova
+                </label>
+                <label>
+                    <input
+                        name="fav-styles"
+                        value="forro"
+                        type="checkbox"
+                        class="input-checkbox"
+                    >Forró
+                </label>
+                <label>
+                    <input
+                        name="fav-styles"
+                        value="metal"
+                        type="checkbox"
+                        class="input-checkbox"
+                    >Heavy Metal
+                </label>
+                <label>
+                    <input
+                        name="fav-styles"
+                        value="indie"
+                        type="checkbox"
+                        class="input-checkbox"
+                    >Indie
+                </label>
+                <label>
+                    <input
+                        name="fav-styles"
+                        value="punk"
+                        type="checkbox"
+                        class="input-checkbox"
+                    >Punk Rock
+                </label>
+                <label>
+                    <input
+                        name="fav-styles"
+                        value="hard-core"
+                        type="checkbox"
+                        class="input-checkbox"
+                    >Hard Core
+                </label>
+                <label>
+                    <input
+                        name="fav-styles"
+                        value="sertanejo-raiz"
+                        type="checkbox"
+                        class="input-checkbox"
+                    >Sertanejo Raiz
+                </label>
+                <label>
+                    <input
+                        name="fav-styles"
+                        value="choro"
+                        type="checkbox"
+                        class="input-checkbox"
+                    >Choro
+                </label>
+                <label>
+                    <input
+                        name="fav-styles"
+                        value="eletronica"
+                        type="checkbox"
+                        class="input-checkbox"
+                    >Eletronica
+                </label>
+                <label>
+                    <input
+                        name="fav-styles"
+                        value="axe"
+                        type="checkbox"
+                        class="input-checkbox"
+                    >Axé
+                </label>
+                <label>
+                    <input
+                        name="fav-styles"
+                        value="rap"
+                        type="checkbox"
+                        class="input-checkbox"
+                    >Rap
+                </label>
+            </div>
+            <div class="form-group">
+                <p>Compartilhe um pouco mais sobre você para que outros músicos possam te conhecer melhor =)</p>
+                <textarea name="more-details" id="details" placeholder="Conte um pouco mais sobre você..." cols="68" rows="10"></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="submit">Pronto!</button>
             </div>
         </form>
     </div>

@@ -5,7 +5,7 @@
     --color-background-gray: #f1f1f1;
     --color-borders: #181818;
     --color-fonts-main: #202020;
-    --color-fonts-secondary: #101010;
+    --color-fonts-secondary: #202020;
 }
 
 body, html {
@@ -22,6 +22,7 @@ body {
     font-size: 1rem;
     font-weight: 500;
     line-height: 1.4;
+    color: var(--color-fonts-main);
 }
 
 h1 {
@@ -46,6 +47,7 @@ label {
     margin-bottom: 0.5rem;
 }
 
+
 button,
 select,
 textarea {
@@ -67,6 +69,18 @@ input {
     margin: 3rem auto 0 auto;
 }
 
+@media (min-width: 576px) {
+    .container {
+      max-width: 540px;
+    }
+}
+  
+  @media (min-width: 768px) {
+    .container {
+      max-width: 720px;
+    }
+}
+
 .header {
     padding: 0 1.5rem;
     margin-bottom: 2rem;
@@ -74,15 +88,6 @@ input {
 
 .text-center {
     text-align: center;
-}
-
-
-.input-radio,
-.input-checkbox {
-  display: inline-block;
-  margin-right: 0.625rem;
-  min-height: 1.25rem;
-  min-width: 1.25rem;
 }
 
 #description {
@@ -98,3 +103,47 @@ form {
     padding: 1.125rem 0.5rem;
     border-radius: 1rem;
 }
+
+@media (min-width: 480px) {
+    form {
+      padding: 2.5rem;
+    }
+}
+
+.form-group {
+    margin: 0 auto 1.25rem auto;
+    padding: 0.25rem;
+}
+
+.form-control {
+    display: block;    
+    width: 100%;
+    height: 2rem;
+    padding: 0.4rem 0.75rem;
+    color: var(--color-fonts-secondary);
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.5rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus {
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.input-radio,
+.input-checkbox {
+  display: inline-block;
+  margin-right: 0.625rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
+}
+
+.input-textarea {
+    min-height: 120px;
+    width: 100%;
+    padding: 0.625rem;
+    resize: vertical;
+  }

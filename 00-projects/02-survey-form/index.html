@@ -14,9 +14,9 @@
             <p id="description" class="text-center">Encontre músicos para formar uma banda.</p>
         </header>
 
-        <form>
+        <form id="survey-form">
             <div class="form-group">
-                <label for="name">Nome:
+                <label for="name" id="name-label">Nome:
                     <input 
                         name="name"
                         type="text"
@@ -31,14 +31,14 @@
                     <input 
                         name="age"
                         type="number"
-                        id="age"
+                        id="number"
                         class="form-control"
                         placeholder="Digite sua idade..."
                         required
                     >
                 </label>
 
-                <label for="email">E-mail:
+                <label for="email" id="email-label">E-mail:
                     <input
                         name="email"
                         type="email"
@@ -49,7 +49,7 @@
                     >
                 </label>
 
-                <label for="contact">Por favor, deixe seu contato:
+                <label for="contact" id="number-label">Por favor, deixe seu contato:
                     <input
                         name="contact"
                         type="tel"
@@ -64,7 +64,7 @@
                 <p>Qual das opções abaixo é a mais compatível com o seu nível de experiência?</p>
                 <select 
                     name="experience" 
-                    id="exp-dropdown" 
+                    id="dropdown" 
                     class="form-control"
                 >
                     <option value="beginner">Iniciante</option>
@@ -132,13 +132,13 @@
                         class="input-checkbox"
                     >Voz
                 </label>
-                <label>Other instrument:
+                <label>
                     <input
                         name="instruments"
-                        value=""
-                        type="text"
+                        value="other"
+                        type="checkbox"
                         class="input-checkbox"
-                    >
+                    >Outro instrumento
                 </label>
             </div>
 
